@@ -54,7 +54,7 @@ function MainComponent() {
         console.log("User data before generating nutrition plan:", userData);
 
         setUserData(userData);
-        generateNutritionPlan(userData);
+        generateNutritionPlan(userData.userData);
       } catch (err) {
         console.error("Error fetching user data:", err);
         setError(
